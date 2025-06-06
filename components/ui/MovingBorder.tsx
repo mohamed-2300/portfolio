@@ -10,36 +10,40 @@ import {
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
-export function Button({
+type ButtonProps<T extends React.ElementType> = {
+  borderRadius?: string;
+  children: React.ReactNode;
+  as?: T;
+  containerClassName?: string;
+  borderClassName?: string;
+  duration?: number;
+  className?: string;
+} & React.ComponentPropsWithoutRef<T>;
+
+export function Button<T extends React.ElementType = "button">({
   borderRadius = "1.75rem",
   children,
-  as: Component = "button",
+  as,
   containerClassName,
   borderClassName,
   duration,
   className,
   ...otherProps
-}: {
-  borderRadius?: string;
-  children: React.ReactNode;
-  as?: any;
-  containerClassName?: string;
-  borderClassName?: string;
-  duration?: number;
-  className?: string;
-  [key: string]: any;
-}) {
-  return (
-    <Component
-      className={cn(
+}: ButtonProps<T>) {
+  const Component = as || "button";
+  return React.createElement(
+    Component,
+    {
+      className: cn(
         "relative overflow-hidden bg-transparent p-[1px] text-xl md:col-span-2",
         containerClassName,
-      )}
-      style={{
+      ),
+      style: {
         borderRadius: borderRadius,
-      }}
-      {...otherProps}
-    >
+      },
+      ...otherProps,
+    },
+    <>
       <div
         className="absolute inset-0"
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
@@ -65,7 +69,7 @@ export function Button({
       >
         {children}
       </div>
-    </Component>
+    </>
   );
 }
 
@@ -80,9 +84,9 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) => {
-  const pathRef = useRef<any>();
+  const pathRef = useRef<SVGRectElement | null>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {

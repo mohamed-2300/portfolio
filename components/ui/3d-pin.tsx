@@ -29,10 +29,6 @@ export const PinContainer = ({
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
   };
 
-  function gradient(arg0: number, deg: any, arg2: any, arg3: number, arg4: any, arg5: number) {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <a
       className={cn(
@@ -66,7 +62,7 @@ export const PinContainer = ({
   );
 };
 
-export const PinPerspective = ({ title, href }: { title?: string; href?: string }) => {
+export const PinPerspective = ({ title }: { title?: string; href?: string }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
