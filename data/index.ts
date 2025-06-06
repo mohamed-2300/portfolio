@@ -1,9 +1,3 @@
-export const navItems = [
-  { name: "About", link: "#about", icon: "/about.svg" },
-  { name: "Projects", link: "#projects", icon: "" },
-  { name: "Testimonials", link: "#testimonials", icon: "" },
-  { name: "Contact", link: "#contact", icon: "" },
-];
 
 export const rightLists = [
   'React.js',
