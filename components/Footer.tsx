@@ -1,18 +1,18 @@
 import React from "react";
+import Image from "next/image";
 import { MagicButton } from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/data";
 
 export const Footer = () => {
   return (
-    <footer className="w-full pb-10 mb-[100px] md:mb-6" id="contact">
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50"
-        />
-      </div>
+    <footer className="w-full relative pb-10 mb-[100px] md:mb-6" id="contact">
+      <Image
+        src="/footer-grid.svg"
+        alt="grid"
+        fill
+        className="w-full h-full opacity-50 object-cover"
+      />
       <div className="flex flex-col items-center">
         <h1 className="text-center text-[30px] md:text-3xl lg:text-5xl font-bold">
           Ready to take <span className="text-purple-300">your</span> digital
@@ -45,7 +45,7 @@ export const Footer = () => {
               }}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg border border-slate-600"
             >
-              <img alt={profile.img} src={profile.img} />
+              <Image alt={profile.img} src={profile.img} width={24} height={24} />
             </div>
           ))}
         </div>

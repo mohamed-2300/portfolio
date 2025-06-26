@@ -9,6 +9,8 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import { MagicButton } from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
+import { useMemo } from 'react';
 
 export const BentoGrid = ({
   className,
@@ -54,6 +56,14 @@ export const BentoGridItem = ({
     setCopied(true);
     setTimeout(() => setCopied(false), 5000);
   }
+  const lottieOptions = useMemo(() => ({
+  loop: copied,
+  autoplay: copied,
+  animationData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+}), [copied]);
   return (
     <div
       className={cn(
@@ -68,31 +78,31 @@ export const BentoGridItem = ({
     >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="h-full w-full absolute">
-          {img && (
-            <img
+            {img && (
+            <Image
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
+              fill
             />
-          )}
+            )}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
           }`}
         >
-          {spareImg && (
-            <img
+            {spareImg && (
+            <Image
               src={spareImg}
               alt={spareImg}
-              className={"object-cover, object-center"}
+              className="object-cover object-center"
+              fill
             />
-          )}
+            )}
         </div>
         {id === 6 && (
-          <BackgroundGradientAnimation>
-            {/* <div className="absolute z-50 flex justify-center items-center text-white font-bold" /> */}
-          </BackgroundGradientAnimation>
+          <BackgroundGradientAnimation />
         )}
         <div
           className={cn(
@@ -137,14 +147,7 @@ export const BentoGridItem = ({
         { id === 6 && (
           <div className="mt-5 relative">
             <div className="absolute -bottom-5 right-0">
-               <Lottie options={{
-                  loop: copied,
-                  autoplay: copied,
-                  animationData,
-                  rendererSettings:{
-                    preserveAspectRatio: 'xMidYMid slice',
-                  }
-               }} />
+               <Lottie options={lottieOptions} />
             </div>
             <MagicButton 
             title={copied ? 'Email copied' : 'Copy my email'}

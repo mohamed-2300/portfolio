@@ -1,6 +1,7 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
@@ -18,21 +19,23 @@ export const RecentProjects = () => {
             className="lg:min-h-[30.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            <PinContainer
-              title={item.link}
-              href={item.link}
-            >
+            <PinContainer title={item.link} href={item.link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    src="/bg.png"
+                    alt="bgimg"
+                    fill
+                  />
                 </div>
-                <img
+                <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute w-[70%] bottom-0"
+                  fill
+                  className="z-10 absolute w-[70%] bottom-0 object-contain"
                 />
               </div>
 
@@ -60,7 +63,12 @@ export const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt={icon} className="p-2" />
+                      <Image
+                        src={icon}
+                        alt="icon"
+                        fill
+                        className="p-2"
+                      />
                     </div>
                   ))}
                 </div>
@@ -79,4 +87,3 @@ export const RecentProjects = () => {
     </div>
   );
 };
-
