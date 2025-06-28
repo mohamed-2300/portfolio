@@ -1,10 +1,12 @@
+"use client";
+
 import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/MovingBorder";
 import Image from "next/image";
 
 
-export const Experience = () => {
+const Experience = () => {
   return (
     <div className="py-20" id="experience">
       <h1 className="text-center text-[30px] md:text-3xl lg:text-5xl font-bold">
@@ -45,3 +47,5 @@ export const Experience = () => {
     </div>
   );
 };
+
+export default Experience;

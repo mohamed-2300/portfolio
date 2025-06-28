@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { companies, testimonials } from "@/data";
 
-export const Clients = () => {
+const Clients = () => {
   return (
     <div className="py-5" id="testimonials">
       <h1 className="text-center text-[30px] md:text-3xl lg:text-5xl font-bold">
@@ -32,3 +34,5 @@ export const Clients = () => {
     </div>
   );
 };
+
+export default Clients;

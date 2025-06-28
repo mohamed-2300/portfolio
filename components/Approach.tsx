@@ -4,7 +4,7 @@ import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 
-export function Approach() {
+export default function Approach() {
   return (
     <section id="approach" className="w-full py-20">
       <h1 className="text-center text-[30px] md:text-3xl lg:text-5xl font-bold">

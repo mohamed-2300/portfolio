@@ -4,7 +4,7 @@ import { MagicButton } from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/data";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="w-full relative pb-10 mb-[100px] md:mb-6" id="contact">
       <Image
@@ -53,3 +53,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

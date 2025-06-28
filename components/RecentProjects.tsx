@@ -6,7 +6,7 @@ import Image from "next/image";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 
-export const RecentProjects = () => {
+const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className="text-center text-[30px] md:text-3xl lg:text-5xl font-bold">
@@ -87,3 +87,5 @@ export const RecentProjects = () => {
     </div>
   );
 };
+
+export default RecentProjects;
