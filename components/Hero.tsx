@@ -5,10 +5,9 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MagicButton } from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { cn } from "@/lib/utils";
-// import Typewriter from "typewriter-effect";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <div>
       <div>
@@ -41,7 +40,7 @@ export const Hero = () => {
             <TextGenerateEffect
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
               words="Transforming Concepts into Seamless User Experiences"
-              duration={0.5}
+              duration={1}
             />
             <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I&apos;m Mohamed, a
@@ -63,3 +62,5 @@ export const Hero = () => {
     </div>
   );
 };
+
+export default Hero;
