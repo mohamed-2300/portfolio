@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mohamed's Protfolio",
   description: "Modern and responsive Portfolio",
+  icons: {
+    icon: "/myImage.webp",
+  },
 };
 
 export default function RootLayout({
