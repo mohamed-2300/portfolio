@@ -45,7 +45,9 @@ const Footer = () => {
               }}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg border border-slate-600"
             >
-              <Image alt={profile.img} src={profile.img} width={24} height={24} />
+              <a href={profile.url} target="_blank" rel="noopener noreferrer">
+                <Image alt={profile.img} src={profile.img} width={24} height={24} />
+              </a>
             </div>
           ))}
         </div>

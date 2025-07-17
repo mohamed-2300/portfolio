@@ -9,7 +9,7 @@ import dynamic from "next/dynamic";
 // Lazy loaded components
 const About = dynamic(() => import("@/components/About"), { ssr: false });
 const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
-const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
+// const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
 const Experience = dynamic(() => import("@/components/Experience"), { ssr: false });
 const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
 const RecentProjects = dynamic(() => import("@/components/RecentProjects"), { ssr: false });
@@ -31,7 +31,7 @@ const navItems = [
         <About />
         <Grid />
         <RecentProjects />
-        <Clients />
+        {/* <Clients /> */}
         <Experience />
         <Approach />
         <Footer />

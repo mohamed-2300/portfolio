@@ -10,26 +10,10 @@ const About = () => {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="text-center md:text-left">
           <p className="text-gray-700 dark:text-gray-300 max-w-xl text-justify">
-            Hi, I&apos;m Mohamed Ait Bourice, a full-stack web developer from
-            Morocco. I love building modern and responsive websites using
-            technologies like React.js, Next.js, Tailwind CSS, Express.js,
-            Laravel, MySQL, and MongoDB. I recently finished an internship where
-            I worked on several real-world projects, including developing a
-            full-featured travel agency app from scratch and creating
-            WordPress-based sites. During this experience, I also learned about
-            SEO and DevOps fundamentals, which helped me gain a broader
-            understanding of how websites perform and scale. I&apos;m passionate
-            about crafting interfaces that are not only functional but also
-            visually engaging. I often use libraries like Aceternity UI and
-            shadcn/ui to speed up development while keeping a high-end design
-            aesthetic. I also enjoy adding fluid motion and interactivity using
-            GSAP, making the user experience dynamic and alive. I like to say
-            that I don&apos;t just code — I vibe while coding. Whether I&apos;m
-            working solo or with a team, I bring energy, creativity, and a
-            problem-solving mindset to every project. Right now, I&apos;m
-            focused on improving my skills, building exciting new projects, and
-            looking for new opportunities to grow as a developer. If you&apos;d
-            like to work together or just connect, feel free to reach out!
+            Hi, I&apos;m Mohamed Ait Bourice, a full-stack web developer from Morocco. I create modern, responsive websites using React.js, Next.js, Tailwind CSS, Laravel, and MongoDB.
+            During my internship, I built real-world projects including a full travel agency app and WordPress sites, while also learning the fundamentals of SEO and DevOps.
+            I love crafting smooth, interactive UIs with tools like GSAP, shadcn/ui, and Aceternity UI. I&apos;m always learning, building, and looking for new challenges.
+            Let&apos;s build something great together!
           </p>
         </div>
 

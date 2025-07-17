@@ -48,7 +48,7 @@ const Hero = () => {
                   words={["Front-end developer", "Back-end developer", "Full-stack developer"]}
                 />
             </div>
-            <a href="#about">
+            <a href="#grid">
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
