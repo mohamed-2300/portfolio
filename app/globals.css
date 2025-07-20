@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html[class~="dark"] {
+  color-scheme: dark;
+}
+
 @theme inline {
   --animate-first: moveVertical 30s ease infinite;
   --animate-second: moveInCircle 20s reverse infinite;
