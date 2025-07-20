@@ -22,13 +22,12 @@ const Hero = () => {
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
-      <div className="relative flex h-screen w-full items-center justify-center bg-white dark:bg-[#00031a]">
+      <div className="relative flex h-screen w-full items-center justify-center bg-[#00031a]">
         <div
           className={cn(
             "absolute inset-0",
             "[background-size:100px_100px]",
-            "[background-image:linear-gradient(to_right,rgba(228,228,231,0.7)_1px,transparent_1px),linear-gradient(to_bottom,rgba(228,228,231,0.3)_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,rgba(38,38,58,0.7)_1px,transparent_1px),linear-gradient(to_bottom,rgba(38,38,58,0.3)_1px,transparent_1px)]"
+            "[background-image:linear-gradient(to_right,rgba(38,38,58,0.7)_1px,transparent_1px),linear-gradient(to_bottom,rgba(38,38,58,0.3)_1px,transparent_1px)]"
           )}
         />
         <div className="flex justify-center relative my-20 z-10">
@@ -57,7 +56,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white/80 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-[#00031a]/80 shadow-[0_8px_32px_0_rgba(0,3,26,0.25)]" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-[#00031a]/80 shadow-[0_8px_32px_0_rgba(0,3,26,0.25)]" />
       </div>
     </div>
   );

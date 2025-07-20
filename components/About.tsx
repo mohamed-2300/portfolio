@@ -9,7 +9,7 @@ const About = () => {
       </h1>
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="text-center md:text-left">
-          <p className="text-gray-700 dark:text-gray-300 max-w-xl text-justify">
+          <p className="text-gray-300 max-w-xl text-justify">
             Hi, I&apos;m Mohamed Ait Bourice, a full-stack web developer from Morocco. I create modern, responsive websites using React.js, Next.js, Tailwind CSS, Laravel, and MongoDB.
             During my internship, I built real-world projects including a full travel agency app and WordPress sites, while also learning the fundamentals of SEO and DevOps.
             I love crafting smooth, interactive UIs with tools like GSAP, shadcn/ui, and Aceternity UI. I&apos;m always learning, building, and looking for new challenges.
