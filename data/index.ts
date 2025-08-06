@@ -82,8 +82,16 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
     link: "https://cocktails-seven-olive.vercel.app",
   },
+{
+  id: 2,
+  title: "Zentry Clone – Modern Creative Studio",
+  des: "A sleek React-based clone of the Zentry agency website. Showcases smooth GSAP transitions, a fully responsive layout, and a minimalist aesthetic using Tailwind CSS.",
+  img: "/zentry-clone.png",
+  iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
+  link: "https://zentry-clone-mocha.vercel.app",
+}
   {
-    id: 2,
+    id: 3,
     title: "iSee - AI-Powered Visual Assistance",
     des: "A React-based web platform showcasing an AI application designed to assist the visually impaired. Features include object recognition, recipe suggestions, and voice interaction, built with Tailwind CSS and Framer Motion for smooth animations.",
     img: "/isee.png",
@@ -91,7 +99,7 @@ export const projects = [
     link: "https://i-see-psi.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Safar Al-Noor - Spiritual Journey Facilitator",
     des: "A platform connecting Muslims with trusted agencies for Hajj and Umrah pilgrimages. Focused on transparency and ease of comparison, it’s built with React, TypeScript, and Tailwind CSS, featuring Framer Motion for seamless transitions.",
     img: "/omraHajj.png",
@@ -99,7 +107,7 @@ export const projects = [
     link: "https://travel-fronend.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     title: "OldPort - Early Developer Portfolio",
     des: "My first portfolio as a full-stack developer, featuring projects and a personal introduction. Built with React and CSS, it includes Framer Motion animations to showcase early work in web development.",
     img: "/oldPort.png",
