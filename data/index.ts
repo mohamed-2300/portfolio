@@ -100,7 +100,6 @@ export const projects = [
   },
   {
     id: 4,
-    id: 4,
     title: "Safar Al-Noor - Spiritual Journey Facilitator",
     des: "A platform connecting Muslims with trusted agencies for Hajj and Umrah pilgrimages. Focused on transparency and ease of comparison, it’s built with React, TypeScript, and Tailwind CSS, featuring Framer Motion for seamless transitions.",
     img: "/omraHajj.png",
@@ -108,7 +107,6 @@ export const projects = [
     link: "https://travel-fronend.vercel.app",
   },
   {
-    id: 5,
     id: 5,
     title: "OldPort - Early Developer Portfolio",
     des: "My first portfolio as a full-stack developer, featuring projects and a personal introduction. Built with React and CSS, it includes Framer Motion animations to showcase early work in web development.",
