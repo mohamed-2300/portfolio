@@ -89,7 +89,7 @@ export const projects = [
   img: "/zentry-clone.png",
   iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
   link: "https://zentry-clone-mocha.vercel.app",
-}
+},
   {
     id: 3,
     title: "iSee - AI-Powered Visual Assistance",
