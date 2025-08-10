@@ -82,14 +82,14 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
     link: "https://cocktails-seven-olive.vercel.app",
   },
-{
-  id: 2,
-  title: "Zentry Clone - Modern Creative Studio",
-  des: "A sleek React-based clone of the Zentry agency website. Showcases smooth GSAP transitions, a fully responsive layout, and a minimalist aesthetic using Tailwind CSS.",
-  img: "/zentry-clone.png",
-  iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
-  link: "https://zentry-clone-mocha.vercel.app",
-},
+  {
+    id: 2,
+    title: "Zentry Clone - Modern Creative Studio",
+    des: "A sleek React-based clone of the Zentry agency website. Showcases smooth GSAP transitions, a fully responsive layout, and a minimalist aesthetic using Tailwind CSS.",
+    img: "/zentry-clone.png",
+    iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
+    link: "https://zentry-clone-mocha.vercel.app",
+  },
   {
     id: 3,
     title: "iSee - AI-Powered Visual Assistance",
