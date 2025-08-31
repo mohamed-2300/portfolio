@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Mohamed Ait Bourice — Modern Next.js Portfolio
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A fast, responsive, and thoughtfully designed developer portfolio showcasing my projects, experience, and approach. Built with Next.js, Tailwind CSS, Framer Motion, and Three.js to deliver smooth interactions, modern UI patterns, and memorable visuals.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Live: https://mohamed-portfolio-roan.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📋 Table of Contents
 
-## Learn More
+Introduction
 
-To learn more about Next.js, take a look at the following resources:
+Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Project Structure
 
-## Deploy on Vercel
+Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Environment Variables
+
+Deployment
+
+Code Quality
+
+Accessibility
+
+Performance Notes
+
+Roadmap
+
+Credits
+
+Contact
+
+License
+
+🤖 Introduction
+
+This portfolio is a practical demonstration of my full‑stack skill set with a strong focus on frontend craft and animation quality. It combines:
+
+a clean, bento-style layout for clarity,
+
+interactive 3D accents for delight,
+
+motion that supports—not distracts from—content,
+
+and a codebase that favors reusability and maintainability.
+
+The goal is a site that loads fast, looks sharp on every device, and communicates who I am in under 10 seconds.
+
+⚙️ Tech Stack
+
+Framework: Next.js (App Router)
+
+Styling: Tailwind CSS, CSS Modules where needed
+
+Animations: Framer Motion
+
+3D / WebGL: Three.js (select interactive elements)
+
+Icons: Lucide, custom SVGs
+
+Forms & Email: (Optional) Resend / Email API or Form handling service
+
+Deployment: Vercel
+
+🔋 Features
+
+Hero – Spotlight intro with subtle gradients, fluid text reveal, and call‑to‑action.
+
+Bento Grid – Modern sections for About, Skills, and Services using CSS Grid & utility classes.
+
+3D Elements – Tasteful Three.js moments (e.g., globe / card depth) to enhance feel without hurting performance.
+
+Projects Gallery – Filterable, responsive cards with hover states and modal/lightbox details.
+
+Testimonials – Animated carousel / marquee for social proof.
+
+Experience Timeline – Highlight roles, responsibilities, and impact with a scannable timeline.
+
+Canvas Effects – Lightweight canvas shaders/particles in the “Approach” section.
+
+Contact Section – Accessible form with validation and helpful success/error states.
+
+Responsive – Pixel‑perfect on mobile, tablet, and desktop.
+
+SEO & Sharing – Dynamic metadata, Open Graph tags, and social previews.
+
+Plus: component-driven architecture, layout composition, and utilities for motion, media, and formatting.
