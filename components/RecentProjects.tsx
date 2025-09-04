@@ -20,24 +20,27 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer title={item.link} href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-80 w-[80vw] overflow-hidden h-[20vh] lg:h-[25vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <Image
-                    src="/bg.png"
-                    alt="bgimg"
-                    fill
-                  />
+                <div className="relative flex items-center justify-center sm:w-80 w-[80vw] overflow-hidden h-[100px] lg:h-[150px] mb-10">
+                  <div
+                    className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                    style={{ backgroundColor: "#13162D" }}
+                  >
+                    <Image
+                      src="/bg.png"
+                      alt="bgimg"
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 w-[90%] h-[90%]">
+                    <Image
+                      src={item.img}
+                      alt="cover"
+                      fill
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
                 </div>
-                <Image
-                  src={item.img}
-                  alt="cover"
-                  fill
-                  className="z-10 absolute w-[70%] bottom-0 object-contain"
-                />
-              </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {item.title}
