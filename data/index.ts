@@ -114,6 +114,22 @@ export const projects = [
     iconLists: ["/re.svg", "/fm.svg"],
     link: "https://portofolio-vert-zeta.vercel.app",
   },
+  {
+    id: 6,
+    title: "Resumind - AI-Powered Resume Analyzer",
+    des: "AI-powered Resume Analyzer built with React & Puter.js. Includes seamless auth, upload and store resumes, and match candidates to jobs using smart AI evaluations. All wrapped in a clean, reusable UI.",
+    img: "/analyzer-ai.png",
+    iconLists: ["/re.svg", "/tail.svg"],
+    link: "https://ai-resume-analyser-silk-psi.vercel.app",
+  },
+  {
+    id: 7,
+    title: "RedMoon - A Simple Landing Page",
+    des: "An experimental landing page where design meets motion. Built with GSAP, this project transforms static sections into a dynamic journey with smooth scroll effects, subtle transitions, and engaging interactions.",
+    img: "/unknown.png",
+    iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
+    link: "https://simple-landing-page-brown.vercel.app/",
+  },
 ];
 
 export const testimonials = [
