@@ -16,11 +16,11 @@ const RecentProjects = () => {
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-16 gap-y-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[30.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[28.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer title={item.link} href={item.link}>
-                <div className="relative flex items-center justify-center sm:w-80 w-[80vw] overflow-hidden h-[100px] lg:h-[150px] mb-10">
+                <div className="relative flex items-center justify-center sm:w-80 w-[80vw] overflow-hidden h-[100px] lg:h-[170px] mb-10">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
